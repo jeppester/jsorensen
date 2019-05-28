@@ -6,6 +6,7 @@ import loadPosts from './util/loadPosts.mjs'
 import compileArchive from './util/compileArchive.mjs'
 import compilePosts from './util/compilePosts.mjs'
 import compileSass from './util/compileSass.mjs'
+import copyImages from './util/copyImages.mjs'
 import root from './root.mjs'
 
 const fsPromises = fs.promises
@@ -15,6 +16,7 @@ const postsPath = path.join(root, 'posts')
 const publicPath = path.join(root, 'public')
 const templatesPath = path.join(root, 'templates')
 const stylesPath = path.join(root, 'styles')
+const imagesPath = path.join(root, 'images')
 
 const build = async () => {
   // Remove and recreate `public` folder
@@ -26,6 +28,7 @@ const build = async () => {
     compileArchive(posts, templatesPath, publicPath),
     compilePosts(posts, templatesPath, publicPath),
     compileSass(stylesPath, publicPath),
+    copyImages(imagesPath, publicPath),
   ])
 }
 
