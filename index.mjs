@@ -7,6 +7,7 @@ import compileArchive from './util/compileArchive.mjs'
 import compilePosts from './util/compilePosts.mjs'
 import compileSass from './util/compileSass.mjs'
 import copyImages from './util/copyImages.mjs'
+import makeDeploymentHook from './util/makeDeploymentHook.mjs'
 import root from './root.mjs'
 
 const fsPromises = fs.promises
@@ -29,6 +30,7 @@ const build = async () => {
     compilePosts(posts, templatesPath, publicPath),
     compileSass(stylesPath, publicPath),
     copyImages(imagesPath, publicPath),
+    makeDeploymentHook(publicPath),
   ])
 }
 
