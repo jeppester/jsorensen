@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+  article
+    h1= post.title
+    p.date= post.date
+
+    | !{post.content}

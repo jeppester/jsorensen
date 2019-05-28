@@ -1,0 +1,9 @@
+if post
+  aside.navigation
+    h1 Latest
+    for post in posts.slice(0, 4)
+      a.navigation__post-link(href=post.url)=post.title
+
+    p
+      a(href="index.html") View all
+

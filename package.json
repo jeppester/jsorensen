@@ -1,0 +1,33 @@
+{
+  "name": "jsorensen",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "repository": "git@github.com:jeppester/jsorensen.git",
+  "author": "Jesper Sørensen <jeppester1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^9.15.6",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.3",
+    "remarkable": "^1.7.1",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.0"
+  },
+  "scripts": {
+    "build": "node --experimental-modules index.mjs",
+    "develop": "nodemon --experimental-modules index.mjs"
+  },
+  "engines": {
+    "node": ">=11.15.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "public"
+    ],
+    "ext": "mjs,pug,md,scss"
+  }
+}

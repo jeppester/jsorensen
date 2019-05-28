@@ -1,0 +1,49 @@
+html {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12pt;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: $light-background;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 30rem 1.75rem 2.25rem 10rem auto;
+  grid-template-areas: "space-1 content space-2 space-3 about space-4"
+                       "space-1 content space-2 space-3 navigation space-4";
+}
+
+body::before {
+  grid-column-start: space-3;
+  grid-column-end: space-4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  content: '';
+  background-color: $dark-background;
+  border-left: .5rem solid $dark-border;
+}
+
+@media(max-width: $small-viewport-breakpoint) {
+  body {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "content"
+                         "navigation"
+                         "about";
+  }
+
+  body::before {
+    grid-row-start: about;
+    grid-row-end: about;
+    grid-column-start: 1;
+    border: 0;
+    border-top: .5rem solid $dark-border;
+  }
+}
+
+@media(min-width: $large-viewport-breakpoint) {
+  html {
+    font-size: 14pt;
+  }
+}

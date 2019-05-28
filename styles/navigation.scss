@@ -1,0 +1,43 @@
+.navigation {
+  color: $dark-foreground;
+  grid-area: about;
+  font-size: .8em;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+.navigation a {
+  transition: transform .3s ease;
+  display: inline-block;
+}
+
+.navigation a:hover {
+  transform: translateX(2px);
+}
+
+.navigation__post-link {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 1em 0;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+@media(max-width: $small-viewport-breakpoint) {
+  .navigation {
+    margin: 0 1rem;
+    text-align: center;
+    color: $light-foreground;
+    border-color: inherit;
+    margin-bottom: 1rem;
+  }
+
+  .navigation h1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+  each preview in previews
+    article
+      h1= preview.title
+      +date(preview.date)
+
+      div.archive__preview-content !{preview.content}
+
+      p.archive__read-more
+        a(href=preview.url) Read more
