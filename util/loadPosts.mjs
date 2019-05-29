@@ -18,10 +18,13 @@ export default async postsPath => {
     const title = firstLine.substr(2)
     const description = markdownLines.find(l => /^[^#]/.test(l.trim())) // The first non-heading
     const date = moment(dateString)
+    const firstImageMatch = markdown.match(/\!\[.+\]\((.+)\)/)
+    const firstImageUrl = firstImageMatch && firstImageMatch[1]
 
     return {
       url: titleToUrl(title),
       description,
+      image: firstImageUrl,
       date,
       title,
       markdown: markdownLines.join('\n').trim()

@@ -23,6 +23,7 @@ export default async (posts, templatesPath, publicPath) => {
 
   const html = compileTemplate({
     url: siteUrl,
+    image: siteUrl.concat('/images/archive-og-image.png'),
     title: 'jsorensen',
     previews,
     posts,
