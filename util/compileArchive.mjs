@@ -21,7 +21,7 @@ export default async (posts, templatesPath, publicPath) => {
   })
 
   const html = compileTemplate({
-    title: 'I build things',
+    title: 'jsorensen',
     previews,
     posts,
   })
