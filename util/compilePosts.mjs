@@ -2,6 +2,7 @@ import pug from 'pug'
 import fs from 'fs'
 import path from 'path'
 import renderMarkdown from './renderMarkdown.mjs'
+import siteUrl from '../siteUrl.mjs'
 
 const fsPromises = fs.promises
 
@@ -11,6 +12,7 @@ export default async (posts, templatesPath, publicPath) => {
   await posts.map(async ({ date, title, url, markdown }) => {
     const html = compileTemplate({
       title,
+      url: siteUrl.concat('/', url),
       post: {
         title,
         date: date.format('MMMM D, YYYY'),

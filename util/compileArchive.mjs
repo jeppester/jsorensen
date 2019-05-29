@@ -2,6 +2,7 @@ import pug from 'pug'
 import fs from 'fs'
 import path from 'path'
 import renderMarkdown from './renderMarkdown.mjs'
+import siteUrl from '../siteUrl.mjs'
 
 const fsPromises = fs.promises
 
@@ -21,6 +22,7 @@ export default async (posts, templatesPath, publicPath) => {
   })
 
   const html = compileTemplate({
+    url: siteUrl,
     title: 'jsorensen',
     previews,
     posts,

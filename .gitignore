@@ -1,3 +1,4 @@
 node_modules
 public
 .deployment-secret
+.site-url
