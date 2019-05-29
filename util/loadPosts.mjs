@@ -16,10 +16,12 @@ export default async postsPath => {
     const markdownLines = markdown.split('\n')
     const firstLine = markdownLines.splice(0, 1)[0]
     const title = firstLine.substr(2)
+    const description = markdownLines.find(l => /^[^#]/.test(l.trim())) // The first non-heading
     const date = moment(dateString)
 
     return {
       url: titleToUrl(title),
+      description,
       date,
       title,
       markdown: markdownLines.join('\n').trim()

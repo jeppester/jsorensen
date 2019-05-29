@@ -9,12 +9,13 @@ const fsPromises = fs.promises
 export default async (posts, templatesPath, publicPath) => {
   const compileTemplate = pug.compileFile(path.join(templatesPath, 'post.pug'))
 
-  await posts.map(async ({ date, title, url, markdown }) => {
+  await posts.map(async ({ date, title, description, url, markdown }) => {
     const html = compileTemplate({
       title,
       url: siteUrl.concat('/', url),
       post: {
         title,
+        description,
         date: date.format('MMMM D, YYYY'),
         content: renderMarkdown(markdown),
       },
