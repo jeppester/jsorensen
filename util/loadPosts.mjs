@@ -31,5 +31,5 @@ export default async postsPath => {
     }
   }))
 
-  return posts.sort((a, b) => a.date.format('X') - b.date.format('X'))
+  return posts.sort((a, b) => b.date.format('X') - a.date.format('X'))
 }
