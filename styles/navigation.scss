@@ -10,7 +10,6 @@
 
 .navigation a {
   transition: transform .3s ease;
-  display: inline-block;
 }
 
 .navigation a:hover {
@@ -26,6 +25,12 @@
   font-size: 1.2em;
 }
 
+.navigation__index-link {
+  margin: 2em 0 1em;
+  display: block;
+  font-weight: 300;
+}
+
 @media(max-width: $small-viewport-breakpoint) {
   .navigation {
     margin: 0 1rem;
@@ -39,5 +44,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+  }
+
+  .navigation__post-link {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
