@@ -20,6 +20,12 @@
   margin-bottom: 0;
 }
 
+.archive__preview-content > ol,
+.archive__preview-content > ul {
+  padding: 0;
+  list-style-type: none !important;
+}
+
 @media(max-width: $small-viewport-breakpoint) {
   .archive__preview-content > :last-child {
     background-image: linear-gradient($light-foreground-2, rgba($light-foreground-2, .2));
