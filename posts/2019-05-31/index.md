@@ -8,7 +8,7 @@ So I did what I usually do in such situations: I tried to invent something bette
 
 ~150 hours of work and some months later it was finally in a usable state, and it had gotten a name: Tasq.
 
-![the list of features](images/2019-05-31/features-list.png)
+![the list of features](features-list.png)
 
 Tasq has three concepts to understand:
 - User stories: These are what you know them to be - and they must be testable and **cannot** be estimated
@@ -23,7 +23,7 @@ And here's how those concepts are thought to be used:
 
 Tasq doesn't enforce a workflow though, so if it suits your needs, you can also create a feature with only tasks or user stories. Or you can decide not to use features at all, it's up to you.
 
-![a feature with user stories and tasks](images/2019-05-31/feature.png)
+![a feature with user stories and tasks](feature.png)
 _A feature, complete with user stories and tasks_
 
 You might wonder what has happened in the meantime? It has been more than a few months since spring 2017...

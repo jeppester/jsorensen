@@ -4,10 +4,10 @@ My old site lasted nearly a decade, but truth be told, it was left outdated for 
 
 Here are a couple of screenshots that I'm not proud of:
 
-![old site as it looked on a desktop pc](images/2019-05-22/old-site-on-desktop.png)
+![old site as it looked on a desktop pc](old-site-on-desktop.png)
 _In it's glory on a desktop. At some point, I WAS actually quite proud of this_
 
-![old site as it looked on a smartphone](images/2019-05-22/old-site-on-phone.png)
+![old site as it looked on a smartphone](old-site-on-phone.png)
 _Quite a beauty on a smartphone_
 
 In an attempt to avoid such a fate for this new site, I'm trying something else: Rather than being a crappy half-clone of my linkedin profile, this new site will instead be a showroom for some of the side projects I'm working on.
