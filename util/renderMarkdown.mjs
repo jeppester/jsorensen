@@ -3,6 +3,7 @@ import hljs from 'highlight.js'
 
 // Actual default values
 const markdown = new remarkable({
+  linkTarget: '_blank',
   highlight: function (str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {
