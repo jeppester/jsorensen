@@ -25,6 +25,19 @@
   max-width: 80%;
 }
 
+.content h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.content code {
+  color: $code;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
 .content img {
   max-width: 100%;
   max-height: 30rem;
