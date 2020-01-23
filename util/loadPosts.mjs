@@ -20,12 +20,18 @@ export default async postsPath => {
     const firstImageMatch = markdown.match(/\!\[.+\]\((.+)\)/)
     const firstImageUrl = firstImageMatch && slug.concat('/', firstImageMatch[1])
 
-    const fileRegex = /\!\[([^\]]+)\]\(([^:\)]+)\)/g
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g
     const files = []
     for (let [index, content] of Object.entries(markdownLines)) {
-      markdownLines[index] = content.replace(fileRegex, (_wholeMatch, group1, group2) => {
-        files.push(path.join(postPath, group2))
-        return `![${group1}](${slug}/${group2})`
+      markdownLines[index] = content.replace(linkRegex, (wholeMatch, linkText, linkPath) => {
+        const isAnExternalLink = /:/.test(linkPath)
+        if (isAnExternalLink) return wholeMatch
+
+        const isAPostReference = /.html$/.test(linkPath)
+        if (isAPostReference) return wholeMatch
+
+        files.push(path.join(postPath, linkPath))
+        return `[${linkText}](${slug}/${linkPath})`
       })
     }
 
