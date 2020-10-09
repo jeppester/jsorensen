@@ -23,7 +23,7 @@ I can:
 
 And it truly feels like an achievement every time it happens!
 
-![suspended server](parser.gif)
+![parser in action](parser.gif)
 
 Check it all out [here](https://github.com/jeppester/rust-interpreter)*
 
