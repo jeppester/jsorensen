@@ -14,7 +14,7 @@ export default async postsPath => {
     const markdownLines = markdown.split('\n')
     const firstLine = markdownLines.splice(0, 1)[0]
     const title = firstLine.substr(2)
-    const slug = title.toLowerCase().replace(/[^a-z]+/g, '-')
+    const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-')
     const description = markdownLines.find(l => /^[^#]/.test(l.trim())) // The first non-heading
     const date = moment(dateString)
     const firstImageMatch = markdown.match(/\!\[.+\]\((.+)\)/)
