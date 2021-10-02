@@ -13,7 +13,7 @@
 
 .archive__preview-content > :last-child {
   color: transparent;
-  background-image: linear-gradient($light-foreground, rgba($light-foreground, .2));
+  background-image: linear-gradient($light-foreground-2, rgba($light-foreground-2, .2));
   background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
@@ -24,10 +24,4 @@
 .archive__preview-content > ul {
   padding: 0;
   list-style-type: none !important;
-}
-
-@media(max-width: $small-viewport-breakpoint) {
-  .archive__preview-content > :last-child {
-    background-image: linear-gradient($light-foreground-2, rgba($light-foreground-2, .2));
-  }
 }
