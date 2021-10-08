@@ -52,6 +52,15 @@
   color: $code;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+
+  .highlighted {
+    color: $code-light;
+    background:$code-light-background;
+    border-radius: 2px;
+    padding: 1rem;
+    box-shadow: inset 0px 0px 2rem rgba(0, 0, 0, 0.3), 0px 0.4rem 1rem rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+  }
 }
 
 .content img {

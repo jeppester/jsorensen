@@ -5,15 +5,22 @@ import hljs from 'highlight.js'
 const markdown = new remarkable({
   linkTarget: '_blank',
   highlight: function (str, lang) {
+    let result = ''
+
     if (lang && hljs.getLanguage(lang)) {
       try {
-        return hljs.highlight(lang, str).value;
+        result = hljs.highlight(lang, str).value;
+      } catch (err) {}
+    }
+    else {
+      try {
+        result = hljs.highlightAuto(str).value;
       } catch (err) {}
     }
 
-    try {
-      return hljs.highlightAuto(str).value;
-    } catch (err) {}
+    if (result) {
+      return `<div class="highlighted">${result}</div>`
+    }
 
     return ''; // use external default escaping
   }
