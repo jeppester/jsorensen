@@ -9,7 +9,7 @@ I think it makes sense to revisit the development server, and provide an update 
 - Did I run into other problems along the way?
 - Some other stuff that I want to share, but don't know how to phrase as an intriguing question.
 
-It would surely have been nice to see all these bullets answered in one action packed post. But... I started writing, and at some point I must have forgotten that I was writing a post and instead started writing a novelle. I have now become too attached to said novelle to just throw it out.
+It would surely have been nice to see all these bullets answered in one action packed post. But... I started writing, and at some point I must have forgotten that I was writing a post and instead started writing a novel. I have now become too attached to said novel to just throw it out.
 
 What I'm trying to say is that there will be - hopefully only - two blog posts.
 
