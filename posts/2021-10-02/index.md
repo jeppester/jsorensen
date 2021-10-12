@@ -2,7 +2,7 @@
 
 I recently had a look at my website, and I was honestly very surprised to see that [my-new-old-development-server](my-new-old-development-server.html) is now two years old!
 
-I think it makes sense to revisit the development server, and provide an update of how it's been:
+I think it makes sense to revisit the development server, and provide an update on how it's been:
 
 - Am I still using it?
 - Did I find solutions for the issues I had?
