@@ -8,7 +8,7 @@
   "dependencies": {
     "highlight.js": "^9.15.6",
     "moment": "^2.24.0",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "pug": "^2.0.3",
     "remarkable": "^1.7.1",
     "rimraf": "^2.6.3"
