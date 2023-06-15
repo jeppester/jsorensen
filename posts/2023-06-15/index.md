@@ -1,6 +1,6 @@
 # Letter game - for my son
 
-My four-year-old son has recently started learning alphabet!
+My four-year-old son recently started learning the alphabet!
 
 Obviously I cannot let such a great opportunity pass, so I've started making my own small game to help him in the process:
 
