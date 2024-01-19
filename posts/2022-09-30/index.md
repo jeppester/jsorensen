@@ -80,6 +80,6 @@ On top of that it was also surprisingly cheap. All in all it ended up costing me
 
 The only slight downside is that my wife has already started thinking up my next furniture project!
 
-Lastly, here's the [the FreeCAD file](tv-stand.FCStd)
+Lastly, here's [the FreeCAD file](tv-stand.FCStd)
 
 _*This might be an incorrect term, please forgive me for my very limited wood working / home renovation vocabolary! It is subpar even in my native language._
