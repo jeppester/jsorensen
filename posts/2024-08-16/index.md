@@ -38,7 +38,7 @@ Veneered MDF is cool because it:
 - Does not have visible "seams"
 - It holds the shape (better than glulam from my experience)
 
-The only downside - for my shelves - was that the edges would need to be veneered manually. So a bit of extra work, but get a great finish, and save some money.
+The only downside - for my shelves - was that the edges would need to be veneered manually. So a bit of extra work, but leading to a great finish and money saved.
 
 Unfortunately I don't have any documentation of the veneering process. What I can tell is that it seemed daunting at first, but quickly turned out to be rather easy. Don't be afraid to try it!
 
